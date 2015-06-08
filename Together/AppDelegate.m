@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -17,7 +18,35 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
+                                                     UIUserNotificationTypeBadge |
+                                                     UIUserNotificationTypeSound);
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes categories:nil];
+    [application registerUserNotificationSettings:settings];
+    [application registerForRemoteNotifications];
+    
+    [Parse enableLocalDatastore];
+    [Parse setApplicationId:@"HGJhvqfpYvoJf4Blxq0lB0NJ0T7wwld9F8bs6aCJ"
+                  clientKey:@"3AoKTc90HcDqCKwtvfdo9JlDm1HL709EYphkLRbM"];
+    
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    PFInstallation *installation = [PFInstallation currentInstallation];
+    NSLog(@"Registering device");
+    [installation setDeviceTokenFromData:deviceToken];
+    installation.channels = @[@"global"];
+    [installation saveInBackground];
+}
+
+-(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"%@", error);
+}
+
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    [PFPush handlePush:userInfo];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

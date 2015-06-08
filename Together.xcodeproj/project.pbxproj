@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D5C5C1D37DEDCD8D7CD35F5 /* libPods-Together.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF565A43A1FE46994D17B0D7 /* libPods-Together.a */; };
 		6A180BE21B1EA01600786754 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A180BE11B1EA01600786754 /* main.m */; };
 		6A180BE51B1EA01600786754 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A180BE41B1EA01600786754 /* AppDelegate.m */; };
 		6A180BE81B1EA01600786754 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A180BE71B1EA01600786754 /* ViewController.m */; };
@@ -14,6 +15,23 @@
 		6A180BED1B1EA01600786754 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A180BEC1B1EA01600786754 /* Images.xcassets */; };
 		6A180BF01B1EA01600786754 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A180BEE1B1EA01600786754 /* LaunchScreen.xib */; };
 		6A180BFC1B1EA01700786754 /* TogetherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A180BFB1B1EA01700786754 /* TogetherTests.m */; };
+		6A180C091B1EA69B00786754 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A180C081B1EA69B00786754 /* MapKit.framework */; };
+		6A180C151B203FA400786754 /* ConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A180C131B203FA400786754 /* ConnectionViewController.m */; };
+		6A180C161B203FA400786754 /* ConnectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A180C141B203FA400786754 /* ConnectionViewController.xib */; };
+		6A180C181B20B21100786754 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A180C171B20B21100786754 /* CoreLocation.framework */; };
+		6A1F61701B23A8BF00298BFC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F616F1B23A8BF00298BFC /* Parse.framework */; };
+		6A1F61721B23A8C500298BFC /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F61711B23A8C500298BFC /* Bolts.framework */; };
+		6A1F61741B23A90500298BFC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F61731B23A90500298BFC /* AudioToolbox.framework */; };
+		6A1F61761B23A90E00298BFC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F61751B23A90E00298BFC /* CFNetwork.framework */; };
+		6A1F61781B23A91B00298BFC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F61771B23A91B00298BFC /* Security.framework */; };
+		6A1F617A1B23A92A00298BFC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F61791B23A92A00298BFC /* MobileCoreServices.framework */; };
+		6A1F617C1B23A93200298BFC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F617B1B23A93200298BFC /* StoreKit.framework */; };
+		6A1F617E1B23A93B00298BFC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F617D1B23A93B00298BFC /* SystemConfiguration.framework */; };
+		6A1F61801B23A94700298BFC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F617F1B23A94700298BFC /* libz.dylib */; };
+		6A1F61831B23AB5C00298BFC /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F61811B23AB5C00298BFC /* CloudKit.framework */; };
+		6A1F61841B23AB5C00298BFC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F61821B23AB5C00298BFC /* libsqlite3.dylib */; };
+		6A1F61861B23AB7900298BFC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F61851B23AB7900298BFC /* Social.framework */; };
+		6A1F61881B23AB8100298BFC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F61871B23AB8100298BFC /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3151E2481F26B2CC06C94340 /* Pods-Together.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Together.release.xcconfig"; path = "Pods/Target Support Files/Pods-Together/Pods-Together.release.xcconfig"; sourceTree = "<group>"; };
 		6A180BDC1B1EA01600786754 /* Together.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Together.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A180BE01B1EA01600786754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A180BE11B1EA01600786754 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +59,26 @@
 		6A180BF51B1EA01700786754 /* TogetherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TogetherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A180BFA1B1EA01700786754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A180BFB1B1EA01700786754 /* TogetherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TogetherTests.m; sourceTree = "<group>"; };
+		6A180C081B1EA69B00786754 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6A180C121B203FA400786754 /* ConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConnectionViewController.h; path = ../ConnectionViewController.h; sourceTree = "<group>"; };
+		6A180C131B203FA400786754 /* ConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConnectionViewController.m; path = ../ConnectionViewController.m; sourceTree = "<group>"; };
+		6A180C141B203FA400786754 /* ConnectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ConnectionViewController.xib; path = ../ConnectionViewController.xib; sourceTree = "<group>"; };
+		6A180C171B20B21100786754 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6A1F616F1B23A8BF00298BFC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../Downloads/parse-library-1.7.4/Parse.framework"; sourceTree = "<group>"; };
+		6A1F61711B23A8C500298BFC /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../Downloads/parse-library-1.7.4/Bolts.framework"; sourceTree = "<group>"; };
+		6A1F61731B23A90500298BFC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6A1F61751B23A90E00298BFC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6A1F61771B23A91B00298BFC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6A1F61791B23A92A00298BFC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6A1F617B1B23A93200298BFC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		6A1F617D1B23A93B00298BFC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6A1F617F1B23A94700298BFC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6A1F61811B23AB5C00298BFC /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		6A1F61821B23AB5C00298BFC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6A1F61851B23AB7900298BFC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		6A1F61871B23AB8100298BFC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		B2431FDE8B809491FEDE6365 /* Pods-Together.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Together.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Together/Pods-Together.debug.xcconfig"; sourceTree = "<group>"; };
+		CF565A43A1FE46994D17B0D7 /* libPods-Together.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Together.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +86,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A1F61881B23AB8100298BFC /* Accounts.framework in Frameworks */,
+				6A1F61861B23AB7900298BFC /* Social.framework in Frameworks */,
+				6A1F61831B23AB5C00298BFC /* CloudKit.framework in Frameworks */,
+				6A1F61841B23AB5C00298BFC /* libsqlite3.dylib in Frameworks */,
+				6A1F61801B23A94700298BFC /* libz.dylib in Frameworks */,
+				6A1F617E1B23A93B00298BFC /* SystemConfiguration.framework in Frameworks */,
+				6A1F617C1B23A93200298BFC /* StoreKit.framework in Frameworks */,
+				6A1F617A1B23A92A00298BFC /* MobileCoreServices.framework in Frameworks */,
+				6A1F61781B23A91B00298BFC /* Security.framework in Frameworks */,
+				6A1F61761B23A90E00298BFC /* CFNetwork.framework in Frameworks */,
+				6A1F61741B23A90500298BFC /* AudioToolbox.framework in Frameworks */,
+				6A1F61721B23A8C500298BFC /* Bolts.framework in Frameworks */,
+				6A180C181B20B21100786754 /* CoreLocation.framework in Frameworks */,
+				6A180C091B1EA69B00786754 /* MapKit.framework in Frameworks */,
+				6A1F61701B23A8BF00298BFC /* Parse.framework in Frameworks */,
+				0D5C5C1D37DEDCD8D7CD35F5 /* libPods-Together.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +121,8 @@
 				6A180BDE1B1EA01600786754 /* Together */,
 				6A180BF81B1EA01700786754 /* TogetherTests */,
 				6A180BDD1B1EA01600786754 /* Products */,
+				AA7A15306B66D3284D2BD680 /* Pods */,
+				6AF90A3568930E2838F1FBDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +142,9 @@
 				6A180BE41B1EA01600786754 /* AppDelegate.m */,
 				6A180BE61B1EA01600786754 /* ViewController.h */,
 				6A180BE71B1EA01600786754 /* ViewController.m */,
+				6A180C121B203FA400786754 /* ConnectionViewController.h */,
+				6A180C131B203FA400786754 /* ConnectionViewController.m */,
+				6A180C141B203FA400786754 /* ConnectionViewController.xib */,
 				6A180BE91B1EA01600786754 /* Main.storyboard */,
 				6A180BEC1B1EA01600786754 /* Images.xcassets */,
 				6A180BEE1B1EA01600786754 /* LaunchScreen.xib */,
@@ -119,6 +179,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6AF90A3568930E2838F1FBDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A1F61871B23AB8100298BFC /* Accounts.framework */,
+				6A1F61851B23AB7900298BFC /* Social.framework */,
+				6A1F61811B23AB5C00298BFC /* CloudKit.framework */,
+				6A1F61821B23AB5C00298BFC /* libsqlite3.dylib */,
+				6A1F617F1B23A94700298BFC /* libz.dylib */,
+				6A1F617D1B23A93B00298BFC /* SystemConfiguration.framework */,
+				6A1F617B1B23A93200298BFC /* StoreKit.framework */,
+				6A1F61791B23A92A00298BFC /* MobileCoreServices.framework */,
+				6A1F61771B23A91B00298BFC /* Security.framework */,
+				6A1F61751B23A90E00298BFC /* CFNetwork.framework */,
+				6A1F61731B23A90500298BFC /* AudioToolbox.framework */,
+				6A1F61711B23A8C500298BFC /* Bolts.framework */,
+				6A1F616F1B23A8BF00298BFC /* Parse.framework */,
+				6A180C081B1EA69B00786754 /* MapKit.framework */,
+				6A180C171B20B21100786754 /* CoreLocation.framework */,
+				CF565A43A1FE46994D17B0D7 /* libPods-Together.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA7A15306B66D3284D2BD680 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2431FDE8B809491FEDE6365 /* Pods-Together.debug.xcconfig */,
+				3151E2481F26B2CC06C94340 /* Pods-Together.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A180BFF1B1EA01700786754 /* Build configuration list for PBXNativeTarget "Together" */;
 			buildPhases = (
+				7C8ECEE3BA3BBCCA7ACA12EC /* Check Pods Manifest.lock */,
 				6A180BD81B1EA01600786754 /* Sources */,
 				6A180BD91B1EA01600786754 /* Frameworks */,
 				6A180BDA1B1EA01600786754 /* Resources */,
+				5C50FB5731D097FD84E0665B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,9 +262,11 @@
 				TargetAttributes = {
 					6A180BDB1B1EA01600786754 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = B83SY88DVS;
 					};
 					6A180BF41B1EA01700786754 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = B83SY88DVS;
 						TestTargetID = 6A180BDB1B1EA01600786754;
 					};
 				};
@@ -199,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A180C161B203FA400786754 /* ConnectionViewController.xib in Resources */,
 				6A180BEB1B1EA01600786754 /* Main.storyboard in Resources */,
 				6A180BF01B1EA01600786754 /* LaunchScreen.xib in Resources */,
 				6A180BED1B1EA01600786754 /* Images.xcassets in Resources */,
@@ -214,11 +311,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C50FB5731D097FD84E0665B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Together/Pods-Together-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C8ECEE3BA3BBCCA7ACA12EC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A180BD81B1EA01600786754 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A180C151B203FA400786754 /* ConnectionViewController.m in Sources */,
 				6A180BE81B1EA01600786754 /* ViewController.m in Sources */,
 				6A180BE51B1EA01600786754 /* AppDelegate.m in Sources */,
 				6A180BE21B1EA01600786754 /* main.m in Sources */,
@@ -280,7 +411,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.irosenb.Together";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.irosenb.Together";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -323,7 +455,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.irosenb.Together";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.irosenb.Together";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -345,21 +478,37 @@
 		};
 		6A180C001B1EA01700786754 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2431FDE8B809491FEDE6365 /* Pods-Together.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/isaac/Downloads/parse-library-1.7.4",
+				);
 				INFOPLIST_FILE = Together/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		6A180C011B1EA01700786754 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3151E2481F26B2CC06C94340 /* Pods-Together.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/isaac/Downloads/parse-library-1.7.4",
+				);
 				INFOPLIST_FILE = Together/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -367,6 +516,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -378,6 +529,7 @@
 				INFOPLIST_FILE = TogetherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Together.app/Together";
 			};
 			name = Debug;
@@ -386,6 +538,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -393,6 +547,7 @@
 				INFOPLIST_FILE = TogetherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Together.app/Together";
 			};
 			name = Release;
@@ -416,6 +571,7 @@
 				6A180C011B1EA01700786754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A180C021B1EA01700786754 /* Build configuration list for PBXNativeTarget "TogetherTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +580,7 @@
 				6A180C041B1EA01700786754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
