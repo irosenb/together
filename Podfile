@@ -6,6 +6,9 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'Together' do
 	pod 'AFNetworking'
 	pod 'INTULocationManager'
+	pod "OAuth.io"
+	pod 'PubNub'
+	pod 'LayerKit'
 end
 
 target 'TogetherTests' do

@@ -21,13 +21,22 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - INTULocationManager (3.0.1)
+  - LayerKit (0.13.3)
+  - OAuth.io (1.2.1)
+  - PubNub (3.7.10.8)
 
 DEPENDENCIES:
   - AFNetworking
   - INTULocationManager
+  - LayerKit
+  - OAuth.io
+  - PubNub
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   INTULocationManager: c27483113e1bbc5952ead6417f9b39824a240ebb
+  LayerKit: 212b87bdaa7e3592b7188952e2211404a2f59614
+  OAuth.io: 15ea99dc3e4e2b477d753241eae9110fcbe3ff45
+  PubNub: 055424dfc6aaa404f7bdf1297c886a1a009511de
 
 COCOAPODS: 0.34.4

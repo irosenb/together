@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import "LoginViewController.h"
+#import <LayerKit/LayerKit.h>
 
 @interface AppDelegate ()
 
@@ -17,10 +20,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self setup:application];
     // Override point for customization after application launch.
+    
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                    didFinishLaunchingWithOptions:launchOptions];
+}
+
+-(void)setup:(UIApplication *)application {
     UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
-                                                     UIUserNotificationTypeBadge |
-                                                     UIUserNotificationTypeSound);
+                                                    UIUserNotificationTypeBadge |
+                                                    UIUserNotificationTypeSound);
     UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes categories:nil];
     [application registerUserNotificationSettings:settings];
     [application registerForRemoteNotifications];
@@ -29,7 +39,32 @@
     [Parse setApplicationId:@"HGJhvqfpYvoJf4Blxq0lB0NJ0T7wwld9F8bs6aCJ"
                   clientKey:@"3AoKTc90HcDqCKwtvfdo9JlDm1HL709EYphkLRbM"];
     
-    return YES;
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    UIViewController *controller = [[LoginViewController alloc] init];
+    
+    self.window.rootViewController = controller;
+    [self.window makeKeyAndVisible];
+
+    
+    NSUUID *appID = [[NSUUID alloc] initWithUUIDString:@"c9060264-0f9c-11e5-b374-9fa92d006e08"];
+    LYRClient *layerClient = [LYRClient clientWithAppID:appID];
+    
+    [layerClient connectWithCompletion:^(BOOL success, NSError *error) {
+        if (success) {
+            NSLog(@"Client is Connected!");
+        }
+    }];
+
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    return [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                          openURL:url
+                                                sourceApplication:sourceApplication
+                                                       annotation:annotation];
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
@@ -64,6 +99,8 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
+    [FBSDKAppEvents activateApp];
+
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
