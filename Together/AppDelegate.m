@@ -45,16 +45,6 @@
     self.window.rootViewController = controller;
     [self.window makeKeyAndVisible];
 
-    
-    NSUUID *appID = [[NSUUID alloc] initWithUUIDString:@"c9060264-0f9c-11e5-b374-9fa92d006e08"];
-    LYRClient *layerClient = [LYRClient clientWithAppID:appID];
-    
-    [layerClient connectWithCompletion:^(BOOL success, NSError *error) {
-        if (success) {
-            NSLog(@"Client is Connected!");
-        }
-    }];
-
 }
 
 - (BOOL)application:(UIApplication *)application

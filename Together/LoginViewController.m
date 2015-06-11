@@ -36,6 +36,9 @@
     [self.view addSubview:loginButton];
     // Do any additional setup after loading the view from its nib.
 }
+
+-(void)layerClient:(LYRClient *)client didReceiveAuthenticationChallengeWithNonce:(NSString *)nonce {
+    NSLog(@"%@", nonce);
 }
 
 -(void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error {
