@@ -32,6 +32,11 @@
 		6A1F61841B23AB5C00298BFC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F61821B23AB5C00298BFC /* libsqlite3.dylib */; };
 		6A1F61861B23AB7900298BFC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F61851B23AB7900298BFC /* Social.framework */; };
 		6A1F61881B23AB8100298BFC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F61871B23AB8100298BFC /* Accounts.framework */; };
+		6A1F618D1B265D1200298BFC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1F618B1B265D1200298BFC /* LoginViewController.m */; };
+		6A1F618E1B265D1200298BFC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A1F618C1B265D1200298BFC /* LoginViewController.xib */; };
+		6A1F61921B265F1100298BFC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F618F1B265F1100298BFC /* FBSDKCoreKit.framework */; };
+		6A1F61931B265F1100298BFC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F61901B265F1100298BFC /* FBSDKLoginKit.framework */; };
+		6A1F61941B265F1100298BFC /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1F61911B265F1100298BFC /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +82,12 @@
 		6A1F61821B23AB5C00298BFC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		6A1F61851B23AB7900298BFC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		6A1F61871B23AB8100298BFC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		6A1F618A1B265D1200298BFC /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		6A1F618B1B265D1200298BFC /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		6A1F618C1B265D1200298BFC /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		6A1F618F1B265F1100298BFC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = /Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<absolute>"; };
+		6A1F61901B265F1100298BFC /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = /Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<absolute>"; };
+		6A1F61911B265F1100298BFC /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = /Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<absolute>"; };
 		B2431FDE8B809491FEDE6365 /* Pods-Together.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Together.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Together/Pods-Together.debug.xcconfig"; sourceTree = "<group>"; };
 		CF565A43A1FE46994D17B0D7 /* libPods-Together.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Together.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,6 +99,8 @@
 			files = (
 				6A1F61881B23AB8100298BFC /* Accounts.framework in Frameworks */,
 				6A1F61861B23AB7900298BFC /* Social.framework in Frameworks */,
+				6A1F61931B265F1100298BFC /* FBSDKLoginKit.framework in Frameworks */,
+				6A1F61921B265F1100298BFC /* FBSDKCoreKit.framework in Frameworks */,
 				6A1F61831B23AB5C00298BFC /* CloudKit.framework in Frameworks */,
 				6A1F61841B23AB5C00298BFC /* libsqlite3.dylib in Frameworks */,
 				6A1F61801B23A94700298BFC /* libz.dylib in Frameworks */,
@@ -96,6 +109,7 @@
 				6A1F617A1B23A92A00298BFC /* MobileCoreServices.framework in Frameworks */,
 				6A1F61781B23A91B00298BFC /* Security.framework in Frameworks */,
 				6A1F61761B23A90E00298BFC /* CFNetwork.framework in Frameworks */,
+				6A1F61941B265F1100298BFC /* FBSDKShareKit.framework in Frameworks */,
 				6A1F61741B23A90500298BFC /* AudioToolbox.framework in Frameworks */,
 				6A1F61721B23A8C500298BFC /* Bolts.framework in Frameworks */,
 				6A180C181B20B21100786754 /* CoreLocation.framework in Frameworks */,
@@ -140,11 +154,7 @@
 			children = (
 				6A180BE31B1EA01600786754 /* AppDelegate.h */,
 				6A180BE41B1EA01600786754 /* AppDelegate.m */,
-				6A180BE61B1EA01600786754 /* ViewController.h */,
-				6A180BE71B1EA01600786754 /* ViewController.m */,
-				6A180C121B203FA400786754 /* ConnectionViewController.h */,
-				6A180C131B203FA400786754 /* ConnectionViewController.m */,
-				6A180C141B203FA400786754 /* ConnectionViewController.xib */,
+				6A1F61891B26599C00298BFC /* Controllers */,
 				6A180BE91B1EA01600786754 /* Main.storyboard */,
 				6A180BEC1B1EA01600786754 /* Images.xcassets */,
 				6A180BEE1B1EA01600786754 /* LaunchScreen.xib */,
@@ -179,9 +189,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6A1F61891B26599C00298BFC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A180C121B203FA400786754 /* ConnectionViewController.h */,
+				6A180C131B203FA400786754 /* ConnectionViewController.m */,
+				6A180C141B203FA400786754 /* ConnectionViewController.xib */,
+				6A180BE61B1EA01600786754 /* ViewController.h */,
+				6A180BE71B1EA01600786754 /* ViewController.m */,
+				6A1F618A1B265D1200298BFC /* LoginViewController.h */,
+				6A1F618B1B265D1200298BFC /* LoginViewController.m */,
+				6A1F618C1B265D1200298BFC /* LoginViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		6AF90A3568930E2838F1FBDA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6A1F618F1B265F1100298BFC /* FBSDKCoreKit.framework */,
+				6A1F61901B265F1100298BFC /* FBSDKLoginKit.framework */,
+				6A1F61911B265F1100298BFC /* FBSDKShareKit.framework */,
 				6A1F61871B23AB8100298BFC /* Accounts.framework */,
 				6A1F61851B23AB7900298BFC /* Social.framework */,
 				6A1F61811B23AB5C00298BFC /* CloudKit.framework */,
@@ -295,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A1F618E1B265D1200298BFC /* LoginViewController.xib in Resources */,
 				6A180C161B203FA400786754 /* ConnectionViewController.xib in Resources */,
 				6A180BEB1B1EA01600786754 /* Main.storyboard in Resources */,
 				6A180BF01B1EA01600786754 /* LaunchScreen.xib in Resources */,
@@ -353,6 +382,7 @@
 				6A180BE81B1EA01600786754 /* ViewController.m in Sources */,
 				6A180BE51B1EA01600786754 /* AppDelegate.m in Sources */,
 				6A180BE21B1EA01600786754 /* main.m in Sources */,
+				6A1F618D1B265D1200298BFC /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +516,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/isaac/Downloads/parse-library-1.7.4",
+					/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Together/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -504,6 +535,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/isaac/Downloads/parse-library-1.7.4",
+					/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Together/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

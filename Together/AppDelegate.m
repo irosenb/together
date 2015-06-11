@@ -12,7 +12,7 @@
 #import "LoginViewController.h"
 #import <LayerKit/LayerKit.h>
 
-@interface AppDelegate ()
+@interface AppDelegate () 
 
 @end
 
@@ -22,7 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setup:application];
     // Override point for customization after application launch.
-    
+ 
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                     didFinishLaunchingWithOptions:launchOptions];
 }
